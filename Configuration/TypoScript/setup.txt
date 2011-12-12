@@ -1,0 +1,22 @@
+config.tx_extbase.persistence.classes {
+	Tx_Newsauthor_Domain_Model_News {
+		mapping {
+			tableName = tx_news_domain_model_news
+		}
+	}
+	Tx_Newsauthor_Domain_Model_BeUser {
+		mapping {
+			columns {
+				realName.mapOnProperty = realName
+				username.mapOnProperty = username
+			}
+		}
+	}
+	Tx_Newsauthor_Domain_Model_FeUser {
+		mapping {
+			columns {
+				username.mapOnProperty = username
+			}
+		}
+	}
+}
